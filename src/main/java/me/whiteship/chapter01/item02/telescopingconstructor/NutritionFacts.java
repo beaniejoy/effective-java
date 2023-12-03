@@ -1,6 +1,7 @@
 package me.whiteship.chapter01.item02.telescopingconstructor;
 
-// 코드 2-1 점층적 생성자 패턴 - 확장하기 어렵다! (14~15쪽)
+// 코드 2-1 점층적 생성자 패턴 - 확장하기 어렵다! (14~15쪽) >> 생성자 체이닝
+// 필수 필드에 대해서 생성자에서 중복되는 부분은 this() 호출을 통해 전달
 public class NutritionFacts {
     private final int servingSize;  // (mL, 1회 제공량)     필수
     private final int servings;     // (회, 총 n회 제공량)  필수
