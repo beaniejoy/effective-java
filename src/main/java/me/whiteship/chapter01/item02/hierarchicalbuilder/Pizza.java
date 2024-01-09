@@ -17,7 +17,7 @@ public abstract class Pizza {
         EnumSet<Topping> toppings = EnumSet.noneOf(Topping.class);
         public T addTopping(Topping topping) {
             toppings.add(Objects.requireNonNull(topping));
-            return self();
+            return self();  // 이부분이 핵심이다. (return this를 하면 abstract static Builder class가 반환)
         }
 
         abstract Pizza build();
